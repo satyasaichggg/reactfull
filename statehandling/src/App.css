@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.para {
+  background-color: red;
+  padding: 30px;
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.menu {
+  width: 80%;
+  position: fixed;
+  text-align: left;
+  left: -100%;
+  transition: 0.5s ease-in-out;
+  list-style: none;
+  height: 100vh;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.menu.active {
+  left: 0%;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 15px;
+  font-size: 18px;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.micon {
+  position: absolute;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.modelOverlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modelshow {
+  display: block;
+}
+
+.modeldiv {
+  max-width: 320px;
+  height: 320px;
+  background-color: white;
+  position: fixed;
+  transition: 0.3s;
+  left: 50%;
+  top: -500px;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.showmodeldiv {
+  top: 50%;
+  
+}
+
+/* Enquire Now Button */
+.en {
+  position: fixed;
+  right: -20px;
+  top: 150px;
+  transform: rotate(90deg);
+}
+.faqouter{
+    width: 1320px;
+    margin:auto;
+}
+.faqitem{
+  border: 1px solid red;
+  margin:20px;
+}
+.faqitem h2{
+  margin:0px;
+  padding:10px;
+  background-color: rgb(29, 28, 28);
+  color: azure;
+  cursor: pointer;
+  text-align: left;
+}
+.faqitem p{
+  text-align: left;
+  padding: 0px;
+  height: 0px;
+  margin:0px;
+ transition:0.5s;
+  transform: scaleY(0);
+}
+.activeAnswer{
+  height: auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px !important;
+}
